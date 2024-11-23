@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material Compiler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Study Material Compiler</h1>
+    </header>
+    <main>
+        <div class="subject-selector">
+            <h2>Select a Subject:</h2>
+            <select id="subject-dropdown">
+                <option value="">Choose a subject</option>
+                <option value="math">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+                <option value="history">History</option>
+            </select>
+        </div>
+        <div class="content-area">
+            <div id="byjus-content" class="source-content">
+                <h3>Byju's Content</h3>
+                <div class="material-list"></div>
+            </div>
+            <div id="vedantu-content" class="source-content">
+                <h3>Vedantu Content</h3>
+                <div class="material-list"></div>
+            </div>
+            <div id="toppr-content" class="source-content">
+                <h3>Toppr Content</h3>
+                <div class="material-list"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Study Material Compiler. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

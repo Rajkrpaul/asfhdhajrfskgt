@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="URL" method="post">
+        <label for="user">Enter Name:</label><br>
+        <input type="text" placeholder="Enter your name" name="user" id="user" value=""><br>
+        <label>Enter Age:</label><br>
+        <input type="number" placeholder="Enter your Age" name="age" id="age"><br>
+        <label>Enter Email:</label><br>
+        <input type="email"><br>
+        <label>Enter password:</label><br>
+        <input type="password"><br>
+        <label>Select Date:</label><br>
+        <input type="date"><br>
+        <label>Select Week:</label><br>
+        <input type="week"><br>
+        <label>Select Month:</label><br>
+        <input type="month"><br>
+        <label>Select Time:</label><br>
+        <input type="time"><br>
+        <label>Select Date and time:</label><br>
+        <input type="datetime-local"><br>
+        <label>Upload File:</label><br>
+        <input type="file"><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male"checked><label>male</label>
+        <input type="radio" name="gender" id="gender" value="female"><label>female</label>
+        <input type="radio" name="gender" id="gender" value="others"><label>others</label><br>
+     <!--   <input type="button" value="Submit">-->
+        <label>Select your Language:</label><br>
+        <input type="checkbox"><label>English</label><br>
+        <input type="checkbox"><label>Hindi</label><br>
+        <input type="checkbox"><label>Punjabi</label><br>
+        <input type="checkbox"><label>Other</label><br>
+        <label>Introduction</label>
+        <textarea></textarea><br>
+        <label>Select your exam day</label>
+        <select>
+            <optgroup>weekdays
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+        </optgroup>
+        <optgroup>WeekEnd
+            <option>Saturday</option>
+            <option>Sunday</option>
+        </optgroup>
+        </select><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

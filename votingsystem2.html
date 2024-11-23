@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Platform</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Secure Voting Platform</h1>
+    </header>
+    <main>
+        <section id="candidates">
+            <h2>Vote for Your Candidate</h2>
+            <ul id="candidateList">
+                <!-- Candidates will be listed here -->
+            </ul>
+        </section>
+        <section id="vote">
+            <h2>Cast Your Vote</h2>
+            <form onsubmit="castedVote()">
+                
+                <label for="CandidateId">Candidate ID:</label>
+                <form id="voteForm">
+                    <label for="candidate">Select Candidate:</label>
+                    <select id="candidate" name="candidate">
+                        <option value="Rahul Gandhi">Rahul Gandhi</option>
+                        <option value="Narendra Modi">Narendra Modi</option>
+                        <option value="Arvind Kejriwal">Arvind Kejriwal</option>
+                    </select>
+                    
+                </form>
+            </form>
+            <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+            <script src="app.js"></script>
+            <form onsubmit="castedVote()">
+                <input type="text" name="vote" id="vote-id" placeholder="Voter Id" />
+                <button>Vote</button>
+            </form>
+            <div id="show-vote"></div>
+  
+            <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+            <script src="app.js"></script>
+          </section>
+      </main>
+     
+      <div id="show-vote"></div>
+      <div class="row">
+
+        <div class="column">
+            <img src="images/modi.jpeg" width="100%;">
+            <center><figcaption >Narendra Modi</figcaption></center>
+        
+        </div>
+        
+        <div class="column">
+            <img src="images/rahul.jpeg" width="100%;">
+            <center><figcaption >Rahul Gandhi</figcaption></center>
+        
+        </div>
+        
+        <div class="column">
+        
+        <img src="images/kejriwal.jpeg" width="100%;">
+        <center><figcaption >Arvind Kejriwal</figcaption></center>
+        
+        </div>
+        
+        </div>
+      </div>
+      
+     <p>
+       <p align="center" margin="100" >NEW USER? <a href="#">Register Now!</a></p>
+       <p align="center"><a href="#">Voting Status</a></p>
+       <a href="#"></a></li>
+       <a href="#"></a></li>
+       <a href="#"></li>
+     </p>
+  </body>
+    <script>
+      // candidate 1,2,3
+      // 1 -> 1 -> 2 -> 3 -> 1
+      showVote();
+      function castedVote() {
+          var ls = localStorage.getItem("votes");
+          if(ls == undefined || ls.length == 0) {
+              localStorage.setItem("vote", "");
+          }
+          ls = localStorage.getItem("vote");
+          let votedFor = document.getElementById("vote-id").value;
+          ls += " -> " + votedFor;
+          localStorage.setItem("vote", ls);
+      }
+   
+      function showVote() {
+          var ls = localStorage.getItem("vote");
+          document.getElementById("show-vote").innerText = ls;
+      }
+     
+</Script> 
+
+     
+  
+</html>  

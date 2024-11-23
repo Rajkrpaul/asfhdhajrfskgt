@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week5activity</title>
+    <style>
+        nav{
+            background-color: black;padding-left: 210px;padding-top: 10px;padding-bottom: 10px;
+        }
+        a{
+            color: white;text-decoration-line: none;padding-left: 5%;padding-right: 5%;padding-top: 10px;padding-bottom: 10px;
+        }
+        a:hover{
+            color: black;background-color: white;padding-left: 5%;padding-right: 5%;padding-top: 10px;padding-bottom: 10px;
+        }
+        a:active{
+            background-color: greenyellow;
+        }
+        a:visited{
+            color:blue
+        }
+        /*section{
+            display: none;
+        }*/
+        section:target{
+            #Home
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+    <section id="Home">
+        <h2>Home</h2>
+        <p>Welcome to the home section. This content appears when you click the "Home" link.</p>
+    </section>
+    <section id="About">
+        <h2>About</h2>
+        <p>This is about section. Click the "About" link to view this content.</p>
+    </section>
+    <section id="Services">
+        <h2>Services</h2>
+        <p>This is the services section. Click the "Services" link to view this content.</p>
+    </section>
+    <section id="Contact">
+        <h2>Contact</h2>
+        <p>This is the contact section. Click the "Contact" link to view this content.</p>
+    </section>
+
+</body>
+</html>
